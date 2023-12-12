@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bip-Yum</title>
+    <link rel="icon" type="image/x-icon" href="/Images/Bip-Yum.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <!-- Navigation Bar -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gameplay.html">Play</a></li>
+            <!-- Add other navigation links if needed -->
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Bip-Yum, Slime Adventure</h1>
+    </header>
+
+    <div class="content">
+        <p style="width: 90%; text-align:center;margin-left:5%;">
+            Bip-Yum is the first (and only) game that I have developed to date. In the game, you play as the 
+            slime, who goes from scenario to scenario completing whatever tasks are required of him. It is a 
+            rather simple game, but I have put my hear and soul (and 100+ hours) into this game. In addition
+            to all of the coding, I also did all the spritework and made all the buttons. This project was 
+            used as my senior project in college, and the inspiration behind it was that I wanted to do an 
+            entire project from the ground up to understand the full process of game development. This game
+            is the realization of that idea. 
+        </p>
+        <div id = "gallery">
+            <img src="/Images/Bip-Yum Title.png" alt="the Text Bip Yum in front of a blue sky with green grass on the bottom of the screen">
+            <figcaption>The Bip-Yum Title Screen</figcaption>
+            <br>
+            <img src="/Images/Bip-Yum Desert.png" alt="Brown sandy desert, and a green slime being attacked by gray wolves, tumbleweeds bounce in the background">
+            <figcaption>The Desert Senario, where the objective is to defeat the wolves</figcaption>
+            <br>
+            <img src="/Images/Bip-Yum Plains.png" alt="Green plains, and slime bing attacked by angry green stone creatures. Cabbages, some half eaten, dot the scene.">
+            <figcaption>The Plains Scenario, where the objective is to eat the cabbages</figcaption>
+            <br>
+        </div>
+        
+        <ul class="trivia">
+            <li>
+                Each scenario's background is randomly generated based on tiles. 
+            </li>
+            <li>
+                New scenarios can be added on the fly, and the menu is automatically reformatted, and a new button 
+                is created to accommodate it. 
+            </li>
+            <li>
+                The sword swing is smooth because it uses an function to generate its rotation and position
+                mathematically, instead of having to design each frame.
+            </li>
+            <li>
+                The system was entirely designed by me. I imported modules like Pygame to build the project on, but the 
+                entirety of the spritework and programming is mine.
+            </li>
+            <li>
+                In the desert scenario, the tumbleweeds' position is determined algebraically using a function.
+                I can input the height I want them to 'bounce' to, and the program will smoothly make them bounce
+                that high.
+            </li>
+            <li>
+                the clouds on the title screen scroll, and the direction can be changed. They continuously 
+                generate, so no matter how long the user is on the title screen, they always have pretty clouds to look at!
+            </li>
+        </ul>
+        <div id="gallery" style="margin-bottom: 50px;">
+            <h3>Project Details</h3>
+            <p>Hours Worked: 100+</p>
+            <p>Language: Python, built on PyGame</p>
+            <p>Start Date: March 2023</p>
+            <p>Project Size: 3000+ lines of code</p>
+        </div>
+    </div>
+</body>
+</html>

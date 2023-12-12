@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Celestial-Integration Details</title>
+    <link rel="icon" type="image/x-icon" href="/Images/Celestial-Integration.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <!-- Navigation Bar -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Add other navigation links if needed -->
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Celestial Integration, Platetarium Web App</h1>
+    </header>
+
+    <div class="content">
+        <p style="width: 90%; text-align:center;margin-left:5%;">
+            Celestial Integration was used as the final project for my Advanced Python Class. 
+            It connects to Stellarium, a free, open-source Planetarium software. As long as the app is running
+            and has the Remote-control module engaged, this program can pull data from the app as well as 
+            control some of it's properties. The Web app is faster than the actual app, because it does not need
+            to render any of the stars, just read and manipulate their data. 
+        </p>
+        <div id = "gallery">
+            <img src="/Images/Celestial-Integration-Index.png" alt="images of galaxies and stars below the text Celestial Integration, and some page details">
+            <figcaption>The Celestial Integration Home Page</figcaption>
+            <br>
+            <img src="/Images/Celestial-Integration-Planet-Data.png" alt="A data table with information on the planet Mars at the time the program was run">
+            <figcaption>How the information is displayed when returned from the API</figcaption>
+            <br>
+            <img src="/Images/Celestial-Integration-Search_Results.png" alt="Various links containing the word Mars. this is what is returned when you search for an object in the API.">
+            <figcaption>Search results after searching for "mars"</figcaption>
+            <br>
+            <img src="/Images/Celestial-Integration-Starmap.png" alt="A spherical grid that denotes teh location of the star relative to the user's location">
+            <figcaption>The starmap that is generated with each successful search.</figcaption>
+            <br>
+            <img src="/Images/Celestial-Integration-Status.png" alt="The results of the status tab, a list of properties that stellarium currently has">
+            <figcaption>The "Status" page, a partial list of the properties of stellarium.</figcaption>
+            <br>
+        </div>
+        
+        <ul class="trivia">
+            <li>
+                The starmap is generated at runtime using matplotLib, mapping the star using the azimuth and altitude of the star
+            </li>
+            <li>
+                THis app was my first delve into a Framework, in this case, Flask
+            </li>
+            <li>
+                The API itself hosts data on the local machine, meaning that data is not visible to other devices. 
+            </li>
+            <li>
+                This project was also my first project that I designed with an API. I used ChatGPT to help understand the 
+                nuance of Flask and designing the actual style for the page. 
+            </li>
+        </ul>
+        <div id="gallery" style="margin-bottom: 50px;">
+            <h3>Project Details</h3>
+            <p>Hours Worked: 45+</p>
+            <p>Languages: Python, built on Flask / HTML and CSS / JavaScript</p>
+            <p>Start Date: November 2023</p>
+            <p>Project Size: 1000+ lines of code</p>
+        </div>
+    </div>
+</body>
+</html>
